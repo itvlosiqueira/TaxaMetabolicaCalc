@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metabolismo Basal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Taxa Metabólica Basal</h1>
+        
+    </header>
+    <main>
+        <article>
+            <h2>O que é?</h2>
+            <p>A taxa metabólica basal, conhecida também como gasto energético basal, é a quantidade de energia que o corpo, em repouso, gasta para manter as suas funções vitais, como respiração, batimentos do coração e manutenção da temperatura corporal.</p>
+            <p>Os valores da taxa metabólica basal variam de acordo com a idade, o peso e o sexo, e são usados para calcular a quantidade total de energia que o corpo gasta por dia, sendo uma ferramenta para auxiliar no planejamento alimentar de pessoas que desejam manter o peso, engordar ou emagrecer.</p>
+            <h2>Como calcular</h2>
+            <p>Uma forma de calcular a taxa metabólica basal é utilizando uma fórmula criada pela Organização Mundial da Saúde, onde se multiplica o peso corporal por um valor fixo e, após, soma-se esse resultado a outro valor pré definido, de acordo com o sexo e a idade da pessoa.</p>
+            <p>Outra forma simples de calcular a taxa metabólica basal é usando a calculadora a seguir, bastando apenas inserir seus dados:</p>
+        </article>
+        <article id="calculo">
+            <form action="tmb.html">
+                <p><input type="radio" name="radsex" id="homem"> Homem</p>
+                <p><input type="radio" name="radsex" id="mulher"> Mulher</p>
+                <p>Idade: <input type="number" name="idade" id="idade"> anos</p>
+                <p>Peso: <input type="number" name="peso" id="peso"> kg</p>
+                <p>Altura: <input type="number" name="altura" id="altura"> cm</p>
+                <p>Taxa de atividade física:</p>
+                <p><input type="radio" name="exd" id="nada"> Sedentário</p>
+                <p><input type="radio" name="exd" id="pouco"> Pouco (exercício leve 1 a 3 dias por semana)</p>
+                <p><input type="radio" name="exd" id="moderado"> Moderado (exercício moderado, esportes 3 a 5 dias por semana)</p>
+                <p><input type="radio" name="exd" id="intenso"> Intenso (exercício pesado de 5 a 6 dias por semana)</p>
+                <input type="button" value="Calcular" onclick="calcular()">                           
+            </form>
+            <div id="res">
+
+            </div> 
+            <div id="res1">
+
+            </div>
+            <div id="res2">
+
+            </div>
+            <div id="res3">
+                
+            </div>
+        </article>
+    </main>
+    <footer>
+        <p id="p">Desenvolvido por @itvlosiqueira</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
